@@ -245,6 +245,20 @@ function allQuestions(){
     question:item[0],options:item.slice(1,5),correct:item[5],difficulty:item[6],explanation:item[7]
   })));
 }
+
+// Shuffle answer choices while keeping the correct answer attached to its text.
+function shuffleQuestionOptions(question){
+  const choices=question.options.map((text,index)=>({text,isCorrect:index===question.correct}));
+  for(let i=choices.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [choices[i],choices[j]]=[choices[j],choices[i]];
+  }
+  return {
+    ...question,
+    options:choices.map(choice=>choice.text),
+    correct:choices.findIndex(choice=>choice.isCorrect)
+  };
+}
 const BANK = allQuestions();
 
 function renderCategories(){
@@ -276,7 +290,7 @@ function startQuiz(){
   if(!Number.isInteger(requested)||requested<1){$("#setup-error").textContent="Enter a valid question count of at least 1.";return;}
   if(requested>pool.length){$("#setup-error").textContent=`Only ${pool.length} questions match your current category and difficulty selection. Reduce the question count or select more categories.`;return;}
   $("#setup-error").textContent="";
-  selectedQuestions=[...pool].sort(()=>Math.random()-.5).slice(0,requested);
+  selectedQuestions=[...pool].sort(()=>Math.random()-.5).slice(0,requested).map(shuffleQuestionOptions);
   currentIndex=0;answers=Array(requested).fill(null);sessionCategories=categories;
   setup.classList.add("hidden");results.classList.add("hidden");quiz.classList.remove("hidden");
   $("#quiz-category").textContent=categories.length===CATEGORY_DATA.length?"All IT categories":categories.map(id=>CATEGORY_DATA.find(c=>c.id===id).name).join(" · ");
@@ -334,6 +348,6 @@ function showResults(){
 $("#start-quiz").addEventListener("click",startQuiz);
 $("#next-question").addEventListener("click",nextQuestion);
 $("#exit-quiz").addEventListener("click",()=>{if(confirm("Exit this quiz? Your current progress will be lost.")){quiz.classList.add("hidden");setup.classList.remove("hidden");}});
-$("#retry-quiz").addEventListener("click",()=>{selectedQuestions=[...BANK.filter(q=>sessionCategories.includes(q.categoryId)&&($("#difficulty").value==="all"||q.difficulty===$("#difficulty").value))].sort(()=>Math.random()-.5).slice(0,answers.length);currentIndex=0;answers=Array(selectedQuestions.length).fill(null);results.classList.add("hidden");quiz.classList.remove("hidden");renderQuestion();window.scrollTo({top:0,behavior:"smooth"});});
+$("#retry-quiz").addEventListener("click",()=>{selectedQuestions=[...BANK.filter(q=>sessionCategories.includes(q.categoryId)&&($("#difficulty").value==="all"||q.difficulty===$("#difficulty").value))].sort(()=>Math.random()-.5).slice(0,answers.length).map(shuffleQuestionOptions);currentIndex=0;answers=Array(selectedQuestions.length).fill(null);results.classList.add("hidden");quiz.classList.remove("hidden");renderQuestion();window.scrollTo({top:0,behavior:"smooth"});});
 $("#new-quiz").addEventListener("click",()=>{results.classList.add("hidden");setup.classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"});});
 renderCategories();
