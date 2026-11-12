@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practice information technology with quizzes across computer fundamentals, networking, cybersecurity and more.">
+  <title>IT Knowledge Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="IT Knowledge Quiz home"><span class="brand-mark">IT</span><span>Knowledge<span class="brand-light">Quiz</span></span></a>
+    <span class="top-note"><span class="live-dot"></span> Learn something every day</span>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR IT LEARNING ARENA</p>
+        <h1>Test your knowledge.<br><span>Level up your skills.</span></h1>
+        <p class="hero-text">Explore information technology through practical multiple-choice questions. Choose your topics, set your challenge and see how much you know.</p>
+        <div class="hero-stats">
+          <div><strong>10</strong><span>IT categories</span></div>
+          <div><strong>200+</strong><span>Practice questions</span></div>
+          <div><strong>∞</strong><span>Ways to improve</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-card"><span class="code-symbol">&lt;/&gt;</span><span class="art-caption">THINK · LEARN · BUILD</span></div>
+        <span class="float-chip chip-one">01 / 10</span><span class="float-chip chip-two">010101</span>
+      </div>
+    </section>
+
+    <section class="setup panel" id="setup">
+      <div class="section-heading"><div><p class="eyebrow">01 — CONFIGURE YOUR QUIZ</p><h2>Choose your challenge</h2></div><span class="default-pill">200 questions by default</span></div>
+      <div class="setup-grid">
+        <div class="field-group">
+          <label for="question-count">Number of questions</label>
+          <div class="count-control">
+            <input id="question-count" type="number" min="1" max="200" value="200">
+            <span>questions</span>
+          </div>
+          <p class="field-hint">Choose between 1 and 200 questions for each session.</p>
+        </div>
+        <div class="field-group">
+          <label for="difficulty">Difficulty level</label>
+          <select id="difficulty">
+            <option value="all">All levels</option><option value="Beginner">Beginner</option><option value="Intermediate">Intermediate</option><option value="Advanced">Advanced</option>
+          </select>
+          <p class="field-hint">Questions are mixed across the selected level.</p>
+        </div>
+      </div>
+      <div class="category-heading"><div><h3>Select categories</h3><p>Choose one or more topics. Select all to practise everything.</p></div><div class="selection-actions"><button type="button" class="text-button" id="select-all">Select all</button><span>·</span><button type="button" class="text-button" id="clear-all">Clear</button></div></div>
+      <div class="category-grid" id="category-grid"></div>
+      <div class="setup-footer"><p id="available-count">200 questions available</p><button class="primary-button" id="start-quiz">Start quiz <span>→</span></button></div>
+      <p class="setup-error" id="setup-error" role="alert"></p>
+    </section>
+
+    <section class="quiz panel hidden" id="quiz" aria-live="polite">
+      <div class="quiz-top"><div><p class="eyebrow">02 — YOUR QUIZ IN PROGRESS</p><h2 id="quiz-category">IT Knowledge</h2></div><button class="exit-button" id="exit-quiz">✕ Exit quiz</button></div>
+      <div class="progress-meta"><span id="question-position">Question 1 of 200</span><span id="progress-percent">0% complete</span></div>
+      <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+      <div class="question-meta"><span id="question-category" class="topic-tag"></span><span id="question-difficulty" class="difficulty-tag"></span></div>
+      <h3 class="question-text" id="question-text"></h3>
+      <div class="answers" id="answers"></div>
+      <div class="explanation hidden" id="explanation"></div>
+      <div class="quiz-footer"><span id="answered-count">0 answered</span><button class="primary-button" id="next-question" disabled>Next question <span>→</span></button></div>
+    </section>
+
+    <section class="results panel hidden" id="results">
+      <p class="eyebrow">03 — SESSION COMPLETE</p>
+      <div class="result-icon" id="result-icon">✓</div>
+      <h2 id="result-title">Well done!</h2>
+      <p class="result-subtitle" id="result-subtitle"></p>
+      <div class="score-card"><span>Your score</span><strong id="score-value">0%</strong><div class="score-track"><div id="score-fill"></div></div><div class="score-breakdown"><div><strong id="correct-value">0</strong><span>Correct</span></div><div><strong id="incorrect-value">0</strong><span>Incorrect</span></div><div><strong id="total-value">0</strong><span>Total questions</span></div></div></div>
+      <div class="review-heading"><h3>Answer review</h3><span id="review-summary"></span></div>
+      <div class="review-list" id="review-list"></div>
+      <div class="result-actions"><button class="primary-button" id="retry-quiz">Try again <span>↻</span></button><button class="secondary-button" id="new-quiz">Configure new quiz</button></div>
+    </section>
+    <footer><span>IT Knowledge Quiz</span><span>Built for curious minds · Keep learning</span></footer>
+  </main>
+</body>
+</html>
