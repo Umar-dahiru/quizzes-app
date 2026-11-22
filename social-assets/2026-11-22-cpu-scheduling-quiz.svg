@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06133b"/><stop offset=".55" stop-color="#073c86"/><stop offset="1" stop-color="#07163d"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08c9ff"/><stop offset="1" stop-color="#1760ff"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff36b"/><stop offset="1" stop-color="#ffb900"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#1a9bff" stroke-opacity=".13" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <rect width="1080" height="1080" fill="url(#grid)"/>
+  <g fill="none" stroke="#12aaff" stroke-width="5" opacity=".6">
+    <path d="M0 130H130V80H210M1080 145H970V90H900M0 920H90V980H180M1080 930H990V1000H900"/>
+    <path d="M0 270H70V230H125M1080 270H1010V225H955M0 790H65V835H125M1080 790H1015V835H955"/>
+  </g>
+  <g fill="#16caff" filter="url(#glow)"><circle cx="130" cy="80" r="8"/><circle cx="970" cy="90" r="8"/><circle cx="90" cy="980" r="8"/><circle cx="990" cy="1000" r="8"/></g>
+  <rect x="190" y="38" width="700" height="105" rx="52" fill="#071a49" stroke="url(#gold)" stroke-width="6"/>
+  <path d="M250 67l42 0 0 36-21 16-21-16z" fill="url(#gold)"/><path d="M260 78h22v18h-22z" fill="#0b2b66"/>
+  <text x="540" y="108" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="54" font-weight="800" fill="#fff">TECHINSPIRE <tspan fill="#ffd32a">4o</tspan></text>
+  <rect x="68" y="178" width="944" height="120" rx="28" fill="#0a2b65" stroke="url(#blue)" stroke-width="6"/>
+  <text x="540" y="255" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="900" letter-spacing="2" fill="#fff">COMPUTER SCIENCE <tspan fill="#ffd32a">QUIZ</tspan></text>
+  <rect x="52" y="330" width="976" height="205" rx="34" fill="#061a48" stroke="#14cfff" stroke-width="5"/>
+  <text x="540" y="405" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="45" font-weight="700" fill="#fff">Which CPU scheduling algorithm</text>
+  <text x="540" y="465" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="45" font-weight="700" fill="#fff">gives each process a <tspan fill="#ffdf32">fixed time slice?</tspan></text>
+  <g font-family="Arial,Helvetica,sans-serif" font-weight="700">
+    <rect x="70" y="580" width="620" height="92" rx="44" fill="#09275f" stroke="#15bfff" stroke-width="4"/>
+    <circle cx="125" cy="626" r="34" fill="url(#gold)"/><text x="125" y="640" font-size="40" text-anchor="middle" fill="#09214c">A</text>
+    <text x="190" y="641" font-size="34" fill="#fff">First Come, First Served</text>
+    <rect x="70" y="690" width="620" height="92" rx="44" fill="#09275f" stroke="#15bfff" stroke-width="4"/>
+    <circle cx="125" cy="736" r="34" fill="url(#gold)"/><text x="125" y="750" font-size="40" text-anchor="middle" fill="#09214c">B</text>
+    <text x="190" y="751" font-size="34" fill="#fff">Shortest Job First</text>
+    <rect x="70" y="800" width="620" height="92" rx="44" fill="#09275f" stroke="#15bfff" stroke-width="4"/>
+    <circle cx="125" cy="846" r="34" fill="url(#gold)"/><text x="125" y="860" font-size="40" text-anchor="middle" fill="#09214c">C</text>
+    <text x="190" y="861" font-size="34" fill="#fff">Round Robin</text>
+    <rect x="70" y="910" width="620" height="92" rx="44" fill="#09275f" stroke="#15bfff" stroke-width="4"/>
+    <circle cx="125" cy="956" r="34" fill="url(#gold)"/><text x="125" y="970" font-size="40" text-anchor="middle" fill="#09214c">D</text>
+    <text x="190" y="971" font-size="34" fill="#fff">Priority Scheduling</text>
+  </g>
+  <g transform="translate(760 625)">
+    <rect x="0" y="0" width="250" height="250" rx="30" fill="#0a2860" stroke="#1bcaff" stroke-width="7" filter="url(#glow)"/>
+    <rect x="30" y="30" width="190" height="190" rx="20" fill="#102e72" stroke="#70dfff" stroke-width="4"/>
+    <text x="125" y="145" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="58" font-weight="900" fill="#fff">CPU</text>
+    <g stroke="#16caff" stroke-width="9"><path d="M42-20V0M85-20V0M128-20V0M171-20V0M214-20V0M42 250v20M85 250v20M128 250v20M171 250v20M214 250v20M-20 42H0M-20 85H0M-20 128H0M-20 171H0M-20 214H0M250 42h20M250 85h20M250 128h20M250 171h20M250 214h20"/></g>
+  </g>
+  <rect x="70" y="1020" width="940" height="44" rx="22" fill="url(#gold)"/>
+  <text x="540" y="1052" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="900" fill="#071b49">COMMENT YOUR ANSWER: A, B, C OR D</text>
+</svg>
