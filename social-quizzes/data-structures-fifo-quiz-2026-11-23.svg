@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#04122f"/><stop offset=".55" stop-color="#073b86"/><stop offset="1" stop-color="#020c22"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#59f1ff"/><stop offset="1" stop-color="#0878ff"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe66b"/><stop offset="1" stop-color="#ffb400"/></linearGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#103b7d"/><stop offset="1" stop-color="#061b42"/></linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#39d9ff" stroke-opacity=".13" stroke-width="1"/></pattern>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1080" fill="url(#bg)"/><rect width="1080" height="1080" fill="url(#grid)"/>
+<g fill="none" stroke="#28cfff" stroke-width="4" opacity=".4"><path d="M0 170H75V120H145"/><path d="M1080 190H1000V140H930"/><path d="M0 870H80V925H150"/><path d="M1080 850H1000V910H930"/></g>
+<g fill="#41e4ff" opacity=".7"><circle cx="75" cy="120" r="7"/><circle cx="1000" cy="140" r="7"/><circle cx="80" cy="925" r="7"/><circle cx="1000" cy="910" r="7"/></g>
+<rect x="45" y="34" width="990" height="125" rx="30" fill="#061632" stroke="#f8c62f" stroke-width="4"/>
+<g transform="translate(82 59)"><path d="M8 28L55 6L102 28L55 49Z" fill="url(#gold)"/><path d="M18 39V70L55 89L92 70V39L55 58Z" fill="#f7fbff"/><path d="M55 58V89" stroke="#0a2b5a" stroke-width="5"/></g>
+<text x="220" y="100" font-family="Arial,sans-serif" font-size="57" font-weight="900" fill="#fff">TECHINSPIRE <tspan fill="#ffd43b">4o</tspan></text>
+<text x="224" y="136" font-family="Arial,sans-serif" font-size="21" letter-spacing="5" fill="#9beaff">LEARN  •  PRACTICE  •  EXCEL</text>
+<rect x="70" y="184" width="940" height="88" rx="22" fill="url(#gold)"/>
+<text x="540" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="49" font-weight="900" fill="#08214a">DATA STRUCTURES QUIZ</text>
+<rect x="60" y="296" width="960" height="170" rx="30" fill="#061a3d" stroke="#39dfff" stroke-width="5" filter="url(#glow)"/>
+<text x="540" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="3" fill="#51eaff">QUESTION</text>
+<text x="540" y="405" text-anchor="middle" font-family="Arial,sans-serif" font-size="42" font-weight="800" fill="#fff">Which data structure follows the</text>
+<text x="540" y="450" text-anchor="middle" font-family="Arial,sans-serif" font-size="45" font-weight="900" fill="#ffd43b">FIFO (First In, First Out) principle?</text>
+<g transform="translate(0 0)">
+  <text x="60" y="535" font-family="Arial,sans-serif" font-size="25" font-weight="800" fill="#fff">ENQUEUE</text>
+  <text x="60" y="566" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#ffd43b">(ENTER)</text>
+  <path d="M185 552H258L242 536M258 552L242 568" fill="none" stroke="#ffd43b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="280" y="500" width="520" height="128" rx="26" fill="#08275a" stroke="#45e6ff" stroke-width="6" filter="url(#glow)"/>
+  <g font-family="Arial,sans-serif" font-weight="900" text-anchor="middle">
+    <rect x="305" y="520" width="108" height="86" rx="14" fill="url(#cyan)" stroke="#b7f7ff" stroke-width="3"/><text x="359" y="577" font-size="38" fill="#05204a">A1</text>
+    <rect x="425" y="520" width="108" height="86" rx="14" fill="url(#cyan)" stroke="#b7f7ff" stroke-width="3"/><text x="479" y="577" font-size="38" fill="#05204a">A2</text>
+    <rect x="545" y="520" width="108" height="86" rx="14" fill="url(#cyan)" stroke="#b7f7ff" stroke-width="3"/><text x="599" y="577" font-size="38" fill="#05204a">A3</text>
+    <rect x="665" y="520" width="108" height="86" rx="14" fill="url(#cyan)" stroke="#b7f7ff" stroke-width="3"/><text x="719" y="577" font-size="38" fill="#05204a">A4</text>
+  </g>
+  <path d="M815 552H890L874 536M890 552L874 568" fill="none" stroke="#ffd43b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="915" y="535" font-family="Arial,sans-serif" font-size="25" font-weight="800" fill="#fff">DEQUEUE</text>
+  <text x="915" y="566" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#ffd43b">(LEAVE)</text>
+  <rect x="405" y="640" width="270" height="54" rx="18" fill="#0a4b9b" stroke="#37dfff" stroke-width="4"/>
+  <text x="540" y="678" text-anchor="middle" font-family="Arial,sans-serif" font-size="31" font-weight="900" fill="#fff">QUEUE</text>
+</g>
+<g font-family="Arial,sans-serif" font-weight="800">
+  <rect x="70" y="724" width="450" height="100" rx="22" fill="url(#card)" stroke="#39dfff" stroke-width="4"/>
+  <circle cx="125" cy="774" r="34" fill="url(#gold)"/><text x="125" y="788" text-anchor="middle" font-size="39" fill="#09214a">A</text><text x="190" y="788" font-size="39" fill="#fff">Stack</text>
+  <rect x="560" y="724" width="450" height="100" rx="22" fill="url(#card)" stroke="#39dfff" stroke-width="4"/>
+  <circle cx="615" cy="774" r="34" fill="url(#gold)"/><text x="615" y="788" text-anchor="middle" font-size="39" fill="#09214a">B</text><text x="680" y="788" font-size="39" fill="#fff">Queue</text>
+  <rect x="70" y="842" width="450" height="100" rx="22" fill="url(#card)" stroke="#39dfff" stroke-width="4"/>
+  <circle cx="125" cy="892" r="34" fill="url(#gold)"/><text x="125" y="906" text-anchor="middle" font-size="39" fill="#09214a">C</text><text x="190" y="906" font-size="36" fill="#fff">Binary Tree</text>
+  <rect x="560" y="842" width="450" height="100" rx="22" fill="url(#card)" stroke="#39dfff" stroke-width="4"/>
+  <circle cx="615" cy="892" r="34" fill="url(#gold)"/><text x="615" y="906" text-anchor="middle" font-size="39" fill="#09214a">D</text><text x="680" y="906" font-size="39" fill="#fff">Graph</text>
+</g>
+<rect x="70" y="966" width="940" height="76" rx="22" fill="url(#gold)"/>
+<text x="540" y="1017" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="900" fill="#08214a">COMMENT YOUR ANSWER: A, B, C OR D</text>
+</svg>
