@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#061536"/><stop offset=".55" stop-color="#092b63"/><stop offset="1" stop-color="#031027"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#42e8ff"/><stop offset="1" stop-color="#0878ff"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe66b"/><stop offset="1" stop-color="#ffb300"/></linearGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#123b78"/><stop offset="1" stop-color="#071d43"/></linearGradient>
+  <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#3bcfff" stroke-opacity=".12" stroke-width="1"/></pattern>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1080" height="1080" fill="url(#bg)"/>
+<rect width="1080" height="1080" fill="url(#grid)"/>
+<g fill="none" stroke="#22c9ff" stroke-width="4" opacity=".35"><path d="M0 180H90V130H145"/><path d="M1080 235H990V180H930"/><path d="M0 870H75V925H140"/><path d="M1080 830H1000V890H945"/></g>
+<g fill="#31d8ff" opacity=".55"><circle cx="90" cy="130" r="7"/><circle cx="990" cy="180" r="7"/><circle cx="75" cy="925" r="7"/><circle cx="1000" cy="890" r="7"/></g>
+<rect x="46" y="38" width="988" height="132" rx="30" fill="#06152f" stroke="#f9c72d" stroke-width="4"/>
+<g transform="translate(82 67)">
+ <path d="M10 25L58 5L106 25L58 45Z" fill="url(#gold)"/><path d="M20 36V72L58 91L96 72V36L58 55Z" fill="#f5fbff" opacity=".95"/><path d="M58 55V91" stroke="#0a2c5c" stroke-width="5"/>
+</g>
+<text x="220" y="103" font-family="Arial,sans-serif" font-size="56" font-weight="800" fill="#fff">TECHINSPIRE <tspan fill="#ffd43b">4o</tspan></text>
+<text x="223" y="142" font-family="Arial,sans-serif" font-size="22" letter-spacing="5" fill="#9eeaff">LEARN  •  PRACTICE  •  EXCEL</text>
+<rect x="70" y="205" width="940" height="95" rx="22" fill="url(#gold)"/>
+<text x="540" y="268" text-anchor="middle" font-family="Arial,sans-serif" font-size="54" font-weight="900" fill="#09204b">IT KNOWLEDGE QUIZ</text>
+<rect x="68" y="330" width="944" height="300" rx="34" fill="#f5f9ff" stroke="#38d9ff" stroke-width="7" filter="url(#glow)"/>
+<g transform="translate(100 380)">
+ <rect x="0" y="0" width="190" height="190" rx="28" fill="#0a2c62"/>
+ <rect x="25" y="28" width="140" height="134" rx="18" fill="url(#cyan)"/>
+ <g fill="#fff"><rect x="45" y="53" width="100" height="17" rx="8"/><rect x="45" y="84" width="100" height="17" rx="8"/><rect x="45" y="115" width="100" height="17" rx="8"/></g>
+ <g stroke="#4ee5ff" stroke-width="6"><path d="M-10 48H0M-10 82H0M-10 116H0M190 48H202M190 82H202M190 116H202M48 -10V0M95 -10V0M142 -10V0M48 190V202M95 190V202M142 190V202"/></g>
+</g>
+<text x="340" y="410" font-family="Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="3" fill="#0879c9">QUESTION</text>
+<text x="340" y="482" font-family="Arial,sans-serif" font-size="49" font-weight="800" fill="#071c3d">What does the term</text>
+<text x="340" y="545" font-family="Arial,sans-serif" font-size="66" font-weight="900" fill="#075bdb">“RAM” stand for?</text>
+<text x="340" y="592" font-family="Arial,sans-serif" font-size="23" fill="#45617f">Choose the correct expansion.</text>
+<g font-family="Arial,sans-serif" font-weight="700">
+ <rect x="70" y="670" width="450" height="112" rx="24" fill="url(#card)" stroke="#35cfff" stroke-width="4"/>
+ <circle cx="126" cy="726" r="34" fill="url(#gold)"/><text x="126" y="741" text-anchor="middle" font-size="39" fill="#09214a">A</text>
+ <text x="184" y="718" font-size="29" fill="#fff">Read Access</text><text x="184" y="755" font-size="29" fill="#fff">Memory</text>
+ <rect x="560" y="670" width="450" height="112" rx="24" fill="url(#card)" stroke="#35cfff" stroke-width="4"/>
+ <circle cx="616" cy="726" r="34" fill="url(#gold)"/><text x="616" y="741" text-anchor="middle" font-size="39" fill="#09214a">B</text>
+ <text x="674" y="718" font-size="29" fill="#fff">Random Access</text><text x="674" y="755" font-size="29" fill="#fff">Memory</text>
+ <rect x="70" y="810" width="450" height="112" rx="24" fill="url(#card)" stroke="#35cfff" stroke-width="4"/>
+ <circle cx="126" cy="866" r="34" fill="url(#gold)"/><text x="126" y="881" text-anchor="middle" font-size="39" fill="#09214a">C</text>
+ <text x="184" y="852" font-size="27" fill="#fff">Rapid Application</text><text x="184" y="889" font-size="29" fill="#fff">Memory</text>
+ <rect x="560" y="810" width="450" height="112" rx="24" fill="url(#card)" stroke="#35cfff" stroke-width="4"/>
+ <circle cx="616" cy="866" r="34" fill="url(#gold)"/><text x="616" y="881" text-anchor="middle" font-size="39" fill="#09214a">D</text>
+ <text x="674" y="852" font-size="27" fill="#fff">Remote Access</text><text x="674" y="889" font-size="29" fill="#fff">Memory</text>
+</g>
+<rect x="70" y="952" width="940" height="82" rx="24" fill="#f8c62e"/>
+<text x="540" y="1005" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="900" fill="#08214a">COMMENT YOUR ANSWER: A, B, C OR D</text>
+</svg>
