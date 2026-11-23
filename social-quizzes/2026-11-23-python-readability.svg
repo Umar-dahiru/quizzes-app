@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07183f"/><stop offset=".55" stop-color="#063b86"/><stop offset="1" stop-color="#03102d"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#20e5ff"/><stop offset="1" stop-color="#1681ff"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe45c"/><stop offset="1" stop-color="#ffb800"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="circuit" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M0 20H34V0M34 20H70V55H90M20 90V62H52" fill="none" stroke="#27cfff" stroke-opacity=".15" stroke-width="3"/><circle cx="34" cy="20" r="4" fill="#27cfff" fill-opacity=".3"/><circle cx="70" cy="55" r="4" fill="#27cfff" fill-opacity=".3"/></pattern>
+</defs>
+<rect width="1080" height="1080" rx="38" fill="url(#bg)"/><rect width="1080" height="1080" rx="38" fill="url(#circuit)"/>
+<circle cx="930" cy="245" r="165" fill="#147dff" opacity=".12" filter="url(#glow)"/>
+<rect x="55" y="42" width="970" height="132" rx="32" fill="#061638" stroke="#ffd23e" stroke-width="5"/>
+<circle cx="126" cy="108" r="42" fill="url(#gold)"/><path d="M104 112L126 77L148 112L126 139Z" fill="#08285b"/><path d="M113 112H139" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+<text x="195" y="113" fill="#fff" font-family="Arial,sans-serif" font-size="58" font-weight="800">TECHINSPIRE</text><text x="675" y="113" fill="#ffd33d" font-family="Arial,sans-serif" font-size="58" font-weight="900">4o</text>
+<text x="198" y="150" fill="#9eeaff" font-family="Arial,sans-serif" font-size="22" letter-spacing="5">LEARN  •  QUIZ  •  GROW</text>
+<rect x="55" y="204" width="970" height="100" rx="24" fill="url(#gold)"/>
+<text x="540" y="270" text-anchor="middle" fill="#061638" font-family="Arial,sans-serif" font-size="48" font-weight="900" letter-spacing="2">IT KNOWLEDGE QUIZ</text>
+<rect x="55" y="334" width="970" height="300" rx="30" fill="#061638" stroke="url(#cyan)" stroke-width="5"/>
+<text x="100" y="390" fill="#ffd33d" font-family="Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="3">TODAY'S QUESTION</text>
+<text x="100" y="462" fill="#fff" font-family="Arial,sans-serif" font-size="46" font-weight="800">Which programming language</text>
+<text x="100" y="522" fill="#fff" font-family="Arial,sans-serif" font-size="46" font-weight="800">is known for its simplicity</text>
+<text x="100" y="582" fill="#ffd33d" font-family="Arial,sans-serif" font-size="46" font-weight="900">and readability?</text>
+<rect x="55" y="665" width="465" height="86" rx="22" fill="#09275c" stroke="#28dfff" stroke-width="3"/><circle cx="112" cy="708" r="29" fill="url(#gold)"/><text x="112" y="720" text-anchor="middle" fill="#08204b" font-family="Arial,sans-serif" font-size="34" font-weight="900">A</text><text x="165" y="722" fill="#fff" font-family="Arial,sans-serif" font-size="37" font-weight="700">Java</text>
+<rect x="560" y="665" width="465" height="86" rx="22" fill="#09275c" stroke="#28dfff" stroke-width="3"/><circle cx="617" cy="708" r="29" fill="url(#gold)"/><text x="617" y="720" text-anchor="middle" fill="#08204b" font-family="Arial,sans-serif" font-size="34" font-weight="900">B</text><text x="670" y="722" fill="#fff" font-family="Arial,sans-serif" font-size="37" font-weight="700">Python</text>
+<rect x="55" y="770" width="465" height="86" rx="22" fill="#09275c" stroke="#28dfff" stroke-width="3"/><circle cx="112" cy="813" r="29" fill="url(#gold)"/><text x="112" y="825" text-anchor="middle" fill="#08204b" font-family="Arial,sans-serif" font-size="34" font-weight="900">C</text><text x="165" y="827" fill="#fff" font-family="Arial,sans-serif" font-size="37" font-weight="700">C++</text>
+<rect x="560" y="770" width="465" height="86" rx="22" fill="#09275c" stroke="#28dfff" stroke-width="3"/><circle cx="617" cy="813" r="29" fill="url(#gold)"/><text x="617" y="825" text-anchor="middle" fill="#08204b" font-family="Arial,sans-serif" font-size="34" font-weight="900">D</text><text x="670" y="827" fill="#fff" font-family="Arial,sans-serif" font-size="37" font-weight="700">JavaScript</text>
+<rect x="55" y="887" width="970" height="82" rx="24" fill="url(#gold)"/>
+<text x="540" y="940" text-anchor="middle" fill="#071a3d" font-family="Arial,sans-serif" font-size="34" font-weight="900">COMMENT YOUR ANSWER: A, B, C OR D</text>
+<text x="540" y="1010" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="23" font-weight="700">Take more quizzes: quizzes-app-fu4g.onrender.com</text>
+</svg>
