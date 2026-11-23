@@ -1,0 +1,29 @@
+name: Render quiz artwork
+on:
+  push:
+    branches:
+      - social-quiz-ram-2026-11-23
+    paths:
+      - "social-quizzes/ram-memory-quiz-2026-11-23.svg"
+      - ".github/workflows/render-ram-quiz.yml"
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install SVG renderer
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin
+      - name: Render PNG
+        run: |
+          rsvg-convert -w 1080 -h 1080 -o social-quizzes/ram-memory-quiz-2026-11-23.png social-quizzes/ram-memory-quiz-2026-11-23.svg
+      - name: Commit PNG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add social-quizzes/ram-memory-quiz-2026-11-23.png
+          git commit -m "Render RAM quiz PNG [skip ci]" || exit 0
+          git push
