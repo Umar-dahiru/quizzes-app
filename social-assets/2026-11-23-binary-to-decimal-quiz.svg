@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061437"/><stop offset=".55" stop-color="#073b83"/><stop offset="1" stop-color="#080d2d"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#38f4ff"/><stop offset="1" stop-color="#1670ff"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff36b"/><stop offset="1" stop-color="#ffb900"/></linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b74dff"/><stop offset="1" stop-color="#6428d9"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#22aaff" stroke-opacity=".12" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <rect width="1080" height="1080" fill="url(#grid)"/>
+  <g fill="none" stroke="#1bbfff" stroke-width="5" opacity=".55">
+    <path d="M0 150H115V95H190M1080 150H965V95H890M0 900H90V970H170M1080 900H990V970H910"/>
+    <path d="M0 300H65V255H125M1080 300H1015V255H955"/>
+  </g>
+  <g fill="#38edff" filter="url(#glow)"><circle cx="115" cy="95" r="8"/><circle cx="965" cy="95" r="8"/><circle cx="90" cy="970" r="8"/><circle cx="990" cy="970" r="8"/></g>
+  <rect x="185" y="38" width="710" height="112" rx="56" fill="#071b48" stroke="url(#gold)" stroke-width="6"/>
+  <g transform="translate(235 62)" fill="none" stroke="url(#cyan)" stroke-width="7"><rect x="0" y="0" width="64" height="47" rx="7"/><path d="M-10 58H74L61 70H3Z" fill="#1474d8"/></g>
+  <text x="585" y="112" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="55" font-weight="900" fill="#fff">TECHINSPIRE <tspan fill="#ffd52e">4o</tspan></text>
+  <text x="540" y="208" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" letter-spacing="5" fill="#7deaff">IT &amp; COMPUTER SCIENCE QUIZ</text>
+  <rect x="52" y="248" width="976" height="250" rx="36" fill="#061a48" stroke="url(#cyan)" stroke-width="7" filter="url(#glow)"/>
+  <text x="540" y="318" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="700" fill="#ffd52e">BINARY NUMBER CHALLENGE</text>
+  <text x="540" y="385" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="800" fill="#fff">What is the decimal equivalent</text>
+  <text x="540" y="445" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="800" fill="#fff">of the binary number <tspan fill="#ffd52e">1010</tspan>?</text>
+  <g transform="translate(805 530)" opacity=".9">
+    <rect x="0" y="0" width="220" height="190" rx="28" fill="#08245b" stroke="#23d8ff" stroke-width="5"/>
+    <text x="110" y="75" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#83edff" font-weight="700">BINARY</text>
+    <text x="110" y="145" text-anchor="middle" font-family="monospace" font-size="62" fill="#fff" font-weight="900">1010</text>
+  </g>
+  <g font-family="Arial,Helvetica,sans-serif" font-weight="800">
+    <rect x="70" y="555" width="650" height="105" rx="30" fill="#09275f" stroke="#18caff" stroke-width="5"/>
+    <circle cx="135" cy="607" r="38" fill="url(#gold)"/><text x="135" y="621" text-anchor="middle" font-size="42" fill="#071a43">A</text>
+    <text x="220" y="623" font-size="48" fill="#fff">5</text>
+    <rect x="70" y="685" width="650" height="105" rx="30" fill="#09275f" stroke="#18caff" stroke-width="5"/>
+    <circle cx="135" cy="737" r="38" fill="url(#gold)"/><text x="135" y="751" text-anchor="middle" font-size="42" fill="#071a43">B</text>
+    <text x="220" y="753" font-size="48" fill="#fff">8</text>
+    <rect x="70" y="815" width="650" height="105" rx="30" fill="#09275f" stroke="#18caff" stroke-width="5"/>
+    <circle cx="135" cy="867" r="38" fill="url(#gold)"/><text x="135" y="881" text-anchor="middle" font-size="42" fill="#071a43">C</text>
+    <text x="220" y="883" font-size="48" fill="#fff">10</text>
+    <rect x="70" y="945" width="650" height="105" rx="30" fill="#09275f" stroke="#18caff" stroke-width="5"/>
+    <circle cx="135" cy="997" r="38" fill="url(#gold)"/><text x="135" y="1011" text-anchor="middle" font-size="42" fill="#071a43">D</text>
+    <text x="220" y="1013" font-size="48" fill="#fff">12</text>
+  </g>
+  <rect x="790" y="770" width="245" height="165" rx="28" fill="url(#violet)" stroke="#e0b6ff" stroke-width="4"/>
+  <text x="912" y="825" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="800" fill="#fff">YOUR TURN!</text>
+  <text x="912" y="870" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" fill="#fff">COMMENT</text>
+  <text x="912" y="910" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="900" fill="#ffe45b">A, B, C OR D</text>
+  <text x="540" y="1070" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#8beaff">LEARN  •  PRACTICE  •  EXCEL</text>
+</svg>
