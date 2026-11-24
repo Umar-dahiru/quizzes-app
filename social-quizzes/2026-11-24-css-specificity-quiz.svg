@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06123b"/><stop offset="0.55" stop-color="#082b70"/><stop offset="1" stop-color="#140d48"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00eaff"/><stop offset="1" stop-color="#537bff"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffe45c"/><stop offset="1" stop-color="#ffb400"/></linearGradient>
+  <linearGradient id="violet" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#4f8cff"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#3a8cff" stroke-opacity=".12" stroke-width="1"/></pattern>
+</defs>
+<rect width="1080" height="1080" fill="url(#bg)"/>
+<rect width="1080" height="1080" fill="url(#grid)"/>
+<g fill="none" stroke="#08cfff" stroke-width="4" opacity=".38">
+  <path d="M0 180H70V130H150V80H225"/><path d="M1080 170H1000V120H930V65H860"/><path d="M0 850H80V900H150V960H230"/><path d="M1080 850H1000V900H930V960H850"/>
+</g>
+<g fill="#00dfff" opacity=".8"><circle cx="70" cy="130" r="7"/><circle cx="150" cy="80" r="7"/><circle cx="1000" cy="120" r="7"/><circle cx="930" cy="65" r="7"/><circle cx="80" cy="900" r="7"/><circle cx="150" cy="960" r="7"/><circle cx="1000" cy="900" r="7"/><circle cx="930" cy="960" r="7"/></g>
+<rect x="70" y="45" width="940" height="125" rx="34" fill="#071a4b" stroke="url(#cyan)" stroke-width="5"/>
+<circle cx="142" cy="108" r="37" fill="url(#gold)"/>
+<path d="M122 108h40M142 88v40" stroke="#09204f" stroke-width="8" stroke-linecap="round"/>
+<text x="205" y="112" fill="#fff" font-family="Arial,sans-serif" font-size="54" font-weight="800" letter-spacing="2">TECHINSPIRE <tspan fill="#ffd43b">4o</tspan></text>
+<text x="208" y="148" fill="#bfeaff" font-family="Arial,sans-serif" font-size="22" letter-spacing="5">LEARN • PRACTICE • EXCEL</text>
+<rect x="80" y="205" width="920" height="132" rx="28" fill="#081b4d" stroke="url(#violet)" stroke-width="5" filter="url(#glow)"/>
+<text x="540" y="291" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="66" font-weight="900">CSS <tspan fill="#ffd43b">KNOWLEDGE QUIZ</tspan></text>
+<rect x="80" y="375" width="920" height="220" rx="28" fill="#061842" stroke="url(#cyan)" stroke-width="5"/>
+<circle cx="160" cy="485" r="50" fill="url(#gold)"/><text x="160" y="506" text-anchor="middle" fill="#09204f" font-family="Arial,sans-serif" font-size="65" font-weight="900">?</text>
+<text x="245" y="455" fill="#fff" font-family="Arial,sans-serif" font-size="43" font-weight="700">Which CSS selector has</text>
+<text x="245" y="510" fill="#fff" font-family="Arial,sans-serif" font-size="43" font-weight="700">the highest <tspan fill="#ffd43b">specificity?</tspan></text>
+<g>
+  <rect x="85" y="635" width="435" height="125" rx="24" fill="#071a4a" stroke="#12d9ff" stroke-width="4"/>
+  <circle cx="155" cy="697" r="38" fill="url(#cyan)"/><text x="155" y="712" text-anchor="middle" fill="#071a4a" font-family="Arial,sans-serif" font-size="42" font-weight="900">A</text>
+  <text x="225" y="713" fill="#fff" font-family="Arial,sans-serif" font-size="54" font-weight="800">p</text>
+  <rect x="560" y="635" width="435" height="125" rx="24" fill="#071a4a" stroke="#12d9ff" stroke-width="4"/>
+  <circle cx="630" cy="697" r="38" fill="url(#cyan)"/><text x="630" y="712" text-anchor="middle" fill="#071a4a" font-family="Arial,sans-serif" font-size="42" font-weight="900">B</text>
+  <text x="700" y="713" fill="#fff" font-family="Arial,sans-serif" font-size="54" font-weight="800">.card</text>
+  <rect x="85" y="790" width="435" height="125" rx="24" fill="#071a4a" stroke="#b45cff" stroke-width="4"/>
+  <circle cx="155" cy="852" r="38" fill="url(#violet)"/><text x="155" y="867" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="42" font-weight="900">C</text>
+  <text x="225" y="868" fill="#fff" font-family="Arial,sans-serif" font-size="48" font-weight="800">#header</text>
+  <rect x="560" y="790" width="435" height="125" rx="24" fill="#071a4a" stroke="#b45cff" stroke-width="4"/>
+  <circle cx="630" cy="852" r="38" fill="url(#violet)"/><text x="630" y="867" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="42" font-weight="900">D</text>
+  <text x="700" y="868" fill="#fff" font-family="Arial,sans-serif" font-size="54" font-weight="800">*</text>
+</g>
+<rect x="80" y="950" width="920" height="90" rx="28" fill="url(#gold)"/>
+<text x="540" y="1008" text-anchor="middle" fill="#081a46" font-family="Arial,sans-serif" font-size="34" font-weight="900">COMMENT YOUR ANSWER: A, B, C OR D</text>
+</svg>
